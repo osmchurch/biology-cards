@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>설계도의 진짜 모양</title>
+<meta property="og:title" content="설계도의 진짜 모양 — 유전학 카드뉴스">
+<meta property="og:description" content="DNA가 어떤 모양인지 알아내기 위한 과학자들의 치열한 경쟁 이야기">
+<meta property="og:type" content="website">
+<meta name="description" content="DNA가 어떤 모양인지 알아내기 위한 과학자들의 치열한 경쟁 이야기">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,sans-serif;background:#f5f5f7;padding:20px 16px;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto}
+.dots{display:flex;gap:4px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.dot{width:18px;height:3px;border-radius:2px;background:#ddd;cursor:pointer}
+.dot.on{background:#1a1a2e}
+.card{display:none;background:#fff;border-radius:16px;border:0.5px solid #e0e0e0;overflow:hidden}
+.card.show{display:block}
+.ci{padding:22px 20px 18px}
+.ep{font-size:11px;color:#888;margin-bottom:8px}
+h1{font-size:22px;font-weight:700;line-height:1.3;color:#1a1a2e;margin-bottom:12px}
+h2{font-size:17px;font-weight:700;color:#1a1a2e;margin-bottom:10px}
+p{font-size:14px;line-height:1.85;color:#555;margin-bottom:10px}
+p:last-child{margin-bottom:0}
+.hl{color:#1a1a2e;font-weight:700}
+.em{color:#D85A30;font-weight:700}
+.box{border-radius:12px;padding:14px 16px;margin:10px 0;font-size:14px;line-height:1.8}
+.g{background:#E1F5EE;color:#085041}
+.p{background:#EEEDFE;color:#3C3489}
+.a{background:#FAEEDA;color:#633806}
+.w{background:#f5f5f7;color:#555}
+.shock{border:2px solid #1a1a2e;border-radius:12px;padding:16px;margin:12px 0;text-align:center}
+.fact{font-size:19px;font-weight:700;color:#1a1a2e;line-height:1.4;margin:6px 0}
+.nx{background:#EEEDFE;border-radius:12px;padding:16px;margin-top:14px}
+.nxl{font-size:11px;font-weight:600;color:#7F77DD;margin-bottom:6px}
+.nxt{font-size:15px;font-weight:700;color:#3C3489;margin-bottom:4px}
+.nxd{font-size:13px;color:#534AB7;line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 0}
+.nb{font-size:13px;padding:10px 22px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:manipulation}
+.nb:disabled{opacity:.3}
+.nc{font-size:12px;color:#999}
+svg{width:100%;display:block}
+.divider{height:1px;background:#eee;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap" id="W">
+<div class="dots" id="D"></div>
+
+<div class="card show" id="c1"><div class="ci">
+<div class="ep">에피소드 4 · 설계도의 진짜 모양</div>
+<h1>모양은 아직 아무도 몰랐어 🤷</h1>
+<p>설계도(DNA)가 염색체 위에 있다는 건 알았어. A, T, G, C 네 글자로 쓰여있다는 것도 알았어.</p>
+<p>근데 진짜 중요한 게 남았어. 이 설계도가 <span class="hl">정확히 어떤 모양</span>으로 생겼는지는 — <span class="em">아무도 몰랐어!</span></p>
+<div class="shock">
+<p class="fact">이 모양을 알아내려고<br>전 세계 과학자들이 경쟁했어 🏁</p>
+</div>
+</div></div>
+
+<div class="card" id="c2"><div class="ci">
+<h2>왜 모양이 중요할까? 🧐</h2>
+<p>레고 블록을 생각해봐. 블록이 어떻게 생겼는지 알아야 어떻게 조립되는지 알 수 있지?</p>
+<div class="box w">
+<p>설계도(DNA)도 마찬가지야.<br>
+모양을 알아야<br>
+<strong>어떻게 정보를 저장하고</strong><br>
+<strong>어떻게 복사되는지</strong> 알 수 있어.</p>
+</div>
+<p>그래서 1950년대, 전 세계 실험실에서 이 모양을 먼저 알아내려는 치열한 경쟁이 벌어졌어.</p>
+</div></div>
+
+<div class="card" id="c3"><div class="ci">
+<h2>너무 작아서 안 보여 😵</h2>
+<p>근데 큰 문제가 있었어. DNA는 <span class="em">너무너무 작아서</span> 보통 현미경으로도 안 보였어.</p>
+<div class="box a">
+<p>작은 물체를 보려면<br>
+더 <strong>작은 파장</strong>의 빛이 필요해.</p>
+<p>그래서 과학자들은 보통 빛 대신<br>
+훨씬 파장이 작은 <strong>X선</strong>을 썼어!</p>
+</div>
+<p>X선을 분자에 쏘면 부딪혀 튕기면서 사진에 무늬가 남아. 그 무늬를 보고 모양을 추리하는 거야.</p>
+</div></div>
+
+<div class="card" id="c4"><div class="ci">
+<h2>결정적인 사진 한 장 📸</h2>
+<p>런던의 한 실험실에서 <span class="hl">로잘린드 프랭클린</span>이라는 과학자가 엄청난 사진을 찍었어.</p>
+<div class="shock">
+<p class="fact">"Photo 51"<br>이라고 불리는 사진</p>
+</div>
+<p>이 사진엔 뚜렷한 <span class="em">X자 무늬</span>가 찍혀있었어. 이 X자 무늬, 사실 엄청난 비밀을 담고 있었어.</p>
+</div></div>
+
+<div class="card" id="c5">
+<div class="ci">
+<h2>X자가 말해주는 것 🔍</h2>
+<p>X자 모양의 무늬는 — DNA가 <span class="hl">나선(꽈배기) 모양</span>으로 꼬여있다는 결정적 증거였어.</p>
+</div>
+<svg viewBox="0 0 480 130">
+<path d="M 60 20 Q 100 65 60 110 Q 20 65 60 20" fill="none" stroke="#7F77DD" stroke-width="3"/>
+<path d="M 90 20 Q 50 65 90 110 Q 130 65 90 20" fill="none" stroke="#D85A30" stroke-width="3" opacity="0.7"/>
+<text x="75" y="125" text-anchor="middle" font-size="10" fill="#888">나선 모양 (꽈배기 닮음)</text>
+<text x="240" y="70" text-anchor="middle" font-size="24" fill="#aaa">→</text>
+<text x="390" y="40" text-anchor="middle" font-size="50" fill="#3C3489" font-weight="700">✕</text>
+<text x="390" y="125" text-anchor="middle" font-size="10" fill="#888">사진 속 X자 무늬</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+<p>나선 모양으로 꼬여있으면, X선이 부딪혀 튕길 때 정확히 이런 X자 모양 무늬가 생기거든!</p>
+</div></div>
+
+<div class="card" id="c6"><div class="ci">
+<h2>근데 이 사진이 다른 손으로... 😬</h2>
+<p>이 사진은 프랭클린의 동료 연구자가 — <span class="em">프랭클린 모르게</span> 다른 두 과학자에게 보여줬어.</p>
+<div class="box p">
+<p>그 두 과학자 이름은<br>
+<strong>제임스 왓슨</strong>과 <strong>프랜시스 크릭</strong>.</p>
+</div>
+<p>왓슨은 이 사진을 보자마자—</p>
+</div></div>
+
+<div class="card" id="c7"><div class="ci">
+<h2>"내 입이 떡 벌어졌다" 😲</h2>
+<p>왓슨은 나중에 이렇게 회고했어.</p>
+<div class="shock">
+<p class="fact">"사진을 보는 순간<br>입이 벌어지고<br>심장이 뛰기 시작했다"</p>
+</div>
+<p>왓슨과 크릭은 이 사진과 다른 단서들을 모아서 모형을 직접 조립하기 시작했어. 마치 레고를 맞추듯이!</p>
+</div></div>
+
+<div class="card" id="c8"><div class="ci">
+<h2>퍼즐의 마지막 조각 🧩</h2>
+<p>또 하나의 결정적인 단서가 있었어. A는 항상 T랑 짝을 이루고, G는 항상 C랑 짝을 이룬다는 규칙.</p>
+<div class="box g">
+<p>1953년 2월 21일, 왓슨은<br>
+이 짝꿍 규칙대로 맞추면<br>
+사다리의 양쪽 칸 길이가<br>
+<strong>정확히 똑같아진다</strong>는 걸 발견했어!</p>
+</div>
+<p>모든 조각이 딱 맞아떨어졌어.</p>
+</div></div>
+
+<div class="card" id="c9"><div class="ci">
+<h2>짜잔! 이중나선 🎉</h2>
+<p>1953년 4월, 마침내 발표됐어.</p>
+<div class="shock">
+<p class="fact">DNA는 두 가닥이<br>꼬여있는 사다리 모양<br>— 이중나선!</p>
+</div>
+<p>두 가닥의 기둥(설탕·인산) 사이를 A-T, G-C 짝꿍들이 사다리 발판처럼 연결하고 있어. 이게 바로 설계도의 진짜 모양이었어!</p>
+</div></div>
+
+<div class="card" id="c10"><div class="ci">
+<h2>이 모양이 복제에 완벽한 이유 🧬</h2>
+<p>기억나? 세포가 둘로 나뉠 때 설계도를 <span class="hl">미리 복사</span>해놔야 한다고 했지?</p>
+<div class="box w">
+<p>근데 한 가닥짜리였다면<br>
+복사하기 정말 어려웠을 거야.</p>
+<p>두 가닥이라서 — 마치 지퍼처럼<br>
+<strong>쫙 펼칠 수 있어!</strong></p>
+</div>
+<p>펼쳐진 한쪽 가닥은 그대로 새 짝꿍을 만드는 <span class="em">기준틀</span>이 돼. A는 항상 T를, G는 항상 C를 찾아오니까!</p>
+</div></div>
+
+<div class="card" id="c11"><div class="ci">
+<h2>근데 찜찜한 게 하나 남았어 🤔</h2>
+<p>그 사진을 찍은 사람, <span class="hl">프랭클린</span> 기억하지?</p>
+<div class="box a">
+<p>사진은 프랭클린이 찍었는데<br>
+1962년 노벨상은<br>
+왓슨, 크릭, 그리고 동료 연구자<br>
+이렇게 세 명이 받았어.</p>
+</div>
+<p>프랭클린은 1958년에 병으로 세상을 떠났어. 노벨상은 살아있는 사람한테만 줄 수 있는 규칙이 있어서 — 받을 기회조차 없었어.</p>
+</div></div>
+
+<div class="card" id="c12"><div class="ci">
+<h2>근데 말이야... 🤔</h2>
+<p>이중나선 구조 덕분에 설계도가 어떻게 복사되는지는 알게 됐어.</p>
+<p>근데 더 궁금한 게 생겼어. 이 A, T, G, C 글자들이 — 도대체 우리 몸에서 <span class="hl">어떤 일</span>을 하는 걸까?</p>
+<div class="shock">
+<p class="fact">글자가 어떻게<br>우리 눈 색깔이 되고<br>키가 되는 걸까? 👁️</p>
+</div>
+<div class="nx">
+<div class="nxl">다음 에피소드 →</div>
+<div class="nxt">글자가 몸이 되는 마법</div>
+<div class="nxd">설계도의 글자가 어떻게 진짜 몸의 부품으로 만들어지는지</div>
+</div>
+</div></div>
+
+<div class="nav">
+<button class="nb" id="BP" onclick="go(-1)" disabled>← 이전</button>
+<span class="nc" id="CT">1 / 12</span>
+<button class="nb" id="BN" onclick="go(1)">다음 →</button>
+</div>
+</div>
+<script>
+var c=0,T=12,pg=document.getElementById('D');
+for(var i=0;i<T;i++){
+  var d=document.createElement('div');
+  d.className='dot'+(i===0?' on':'');
+  (function(n){d.onclick=function(){gt(n);};})(i);
+  pg.appendChild(d);
+}
+function gt(n){
+  if(n<0||n>=T)return;
+  document.getElementById('c'+(c+1)).className='card';
+  pg.children[c].className='dot';
+  c=n;
+  document.getElementById('c'+(c+1)).className='card show';
+  pg.children[c].className='dot on';
+  document.getElementById('BP').disabled=(c===0);
+  document.getElementById('BN').disabled=(c===T-1);
+  document.getElementById('CT').textContent=(c+1)+' / '+T;
+  window.scrollTo(0,0);
+}
+function go(d){gt(c+d);}
+var sx=0,sy=0,W=document.getElementById('W');
+W.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+W.addEventListener('touchend',function(e){
+  var dx=e.changedTouches[0].clientX-sx;
+  var dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0)go(1);else go(-1);}
+},{passive:true});
+</script>
+</body>
+</html>
