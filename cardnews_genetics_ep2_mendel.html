@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>완두콩 아저씨의 비밀</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,sans-serif;background:#f5f5f7;padding:20px 16px;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto}
+.dots{display:flex;gap:4px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.dot{width:18px;height:3px;border-radius:2px;background:#ddd;cursor:pointer}
+.dot.on{background:#1a1a2e}
+.card{display:none;background:#fff;border-radius:16px;border:0.5px solid #e0e0e0;overflow:hidden}
+.card.show{display:block}
+.ci{padding:22px 20px 18px}
+.ep{font-size:11px;color:#888;margin-bottom:8px}
+h1{font-size:22px;font-weight:700;line-height:1.3;color:#1a1a2e;margin-bottom:12px}
+h2{font-size:17px;font-weight:700;color:#1a1a2e;margin-bottom:10px}
+p{font-size:14px;line-height:1.85;color:#555;margin-bottom:10px}
+p:last-child{margin-bottom:0}
+.hl{color:#1a1a2e;font-weight:700}
+.em{color:#D85A30;font-weight:700}
+.box{border-radius:12px;padding:14px 16px;margin:10px 0;font-size:14px;line-height:1.8}
+.g{background:#E1F5EE;color:#085041}
+.p{background:#EEEDFE;color:#3C3489}
+.a{background:#FAEEDA;color:#633806}
+.w{background:#f5f5f7;color:#555}
+.shock{border:2px solid #1a1a2e;border-radius:12px;padding:16px;margin:12px 0;text-align:center}
+.fact{font-size:19px;font-weight:700;color:#1a1a2e;line-height:1.4;margin:6px 0}
+.nx{background:#EEEDFE;border-radius:12px;padding:16px;margin-top:14px}
+.nxl{font-size:11px;font-weight:600;color:#7F77DD;margin-bottom:6px}
+.nxt{font-size:15px;font-weight:700;color:#3C3489;margin-bottom:4px}
+.nxd{font-size:13px;color:#534AB7;line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 0}
+.nb{font-size:13px;padding:10px 22px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:manipulation}
+.nb:disabled{opacity:.3}
+.nc{font-size:12px;color:#999}
+svg{width:100%;display:block}
+.divider{height:1px;background:#eee;margin:14px 0}
+.ball{display:inline-block;width:18px;height:18px;border-radius:50%;margin:0 2px;vertical-align:middle}
+.bp{background:#7F4FE0}
+.bw{background:#fff;border:2px solid #ccc}
+</style>
+</head>
+<body>
+<div class="wrap" id="W">
+<div class="dots" id="D"></div>
+
+<div class="card show" id="c1"><div class="ci">
+<div class="ep">에피소드 2 · 완두콩 아저씨의 비밀</div>
+<h1>왜 나는 엄마를 닮았을까? 🤔</h1>
+<p>지난 시간에 설계도(DNA)가 어디 있는지 알아봤지?</p>
+<p>근데 진짜 궁금한 게 있어. 이 설계도, <span class="hl">부모한테서 어떻게 전달</span>되는 걸까?</p>
+<div class="shock">
+<p class="fact">이 비밀을 처음 풀어낸 사람은<br>완두콩을 키우던 아저씨였어 🌱</p>
+</div>
+</div></div>
+
+<div class="card" id="c2"><div class="ci">
+<h2>멘델 아저씨를 소개할게 👨‍🌾</h2>
+<p>이름은 <span class="hl">그레고어 멘델</span>. 약 160년 전 사람이야.</p>
+<div class="box p">
+<p>멘델 아저씨는 정원에서<br>
+<strong>완두콩</strong>을 키우면서<br>
+신기한 실험을 했어.</p>
+</div>
+<p>완두콩 중에는 키가 큰 것도 있고 작은 것도 있었어. 이걸로 교배 실험을 시작했어.</p>
+</div></div>
+
+<div class="card" id="c3"><div class="ci">
+<h2>첫 번째 교배 — 어? 이상하다 😮</h2>
+<p>키 큰 완두콩이랑 키 작은 완두콩을 교배시켰어.</p>
+<div class="box w">
+<p>보통이라면 중간 키가 나올 것 같지?<br>
+근데 결과는 —</p>
+</div>
+<div class="shock">
+<p class="fact">전부 다 키가 컸어!</p>
+</div>
+<p>작은 키는 어디로 사라진 걸까? 멘델 아저씨도 궁금했어.</p>
+</div></div>
+
+<div class="card" id="c4"><div class="ci">
+<h2>근데 다시 교배해봤더니... 👀</h2>
+<p>이 키 큰 자식들끼리 또 교배를 시켜봤어.</p>
+<div class="shock">
+<p class="fact">사라졌던 작은 키가<br>다시 나타났어!</p>
+</div>
+<p>그것도 신기하게 일정한 비율로. <span class="em">큰 거 3 : 작은 거 1</span> 정도로!</p>
+<p>사라진 게 아니라 — <span class="hl">숨어있었던 거야.</span></p>
+</div></div>
+
+<div class="card" id="c5"><div class="ci">
+<h2>진짜 궁금한 건 이거야 🧐</h2>
+<p>왜 하필 <span class="em">3:1</span>일까? 2:1도 아니고 4:1도 아니고?</p>
+<div class="box a">
+<p>이 숫자가 우연이 아니라면<br>
+뭔가 숨겨진 규칙이 있다는 뜻이야.</p>
+</div>
+<p>멘델 아저씨는 한참을 고민하다가 — 기발한 생각을 떠올렸어.</p>
+</div></div>
+
+<div class="card" id="c6"><div class="ci">
+<h2>혹시... 구슬을 두 개씩 가진 거 아닐까? 💡</h2>
+<p>멘델의 생각은 이거였어.</p>
+<div class="box g">
+<p>모든 완두콩은 키를 정하는<br>
+<strong>"구슬" 두 개</strong>를 갖고 있어.<br>
+하나는 엄마한테서, 하나는 아빠한테서!</p>
+</div>
+<p><span class="ball bp"></span> = 큰 키 구슬 (힘이 셈)<br>
+<span class="ball bw"></span> = 작은 키 구슬 (힘이 약함, 숨음)</p>
+</div></div>
+
+<div class="card" id="c7"><div class="ci">
+<h2>첫 교배를 다시 보면 🔍</h2>
+<p>순수하게 큰 것(<span class="ball bp"></span><span class="ball bp"></span>)과 순수하게 작은 것(<span class="ball bw"></span><span class="ball bw"></span>)을 교배했어.</p>
+<div class="box p">
+<p>자식은 각각 하나씩 받아서<br>
+무조건 <span class="ball bp"></span><span class="ball bw"></span> 조합이 돼!</p>
+</div>
+<p>근데 큰 키 구슬(<span class="ball bp"></span>)이 힘이 세서, 작은 키 구슬(<span class="ball bw"></span>)이 있어도 <span class="hl">큰 키로 나타나!</span> 그래서 전부 컸던 거야.</p>
+</div></div>
+
+<div class="card" id="c8">
+<div class="ci">
+<h2>진짜 핵심 — 두 번째 교배 🎯</h2>
+<p>근데 이 자식들(<span class="ball bp"></span><span class="ball bw"></span>)끼리 교배하면? 엄마도, 아빠도 둘 중 하나를 <strong>무작위로</strong> 자식에게 줘.</p>
+</div>
+<svg viewBox="0 0 480 250">
+<text x="240" y="22" text-anchor="middle" font-size="11" fill="#888">엄마가 줄 수 있는 구슬</text>
+<circle cx="195" cy="45" r="10" fill="#7F4FE0"/>
+<text x="195" y="49" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">또는</text>
+<circle cx="285" cy="45" r="10" fill="#fff" stroke="#ccc" stroke-width="2"/>
+
+<text x="40" y="120" text-anchor="middle" font-size="11" fill="#888" transform="rotate(-90 40 120)">아빠가 줄 수 있는 구슬</text>
+<circle cx="80" cy="95" r="10" fill="#7F4FE0"/>
+<circle cx="80" cy="170" r="10" fill="#fff" stroke="#ccc" stroke-width="2"/>
+
+<rect x="120" y="70" width="320" height="150" fill="none" stroke="#ddd" stroke-width="1"/>
+<line x1="280" y1="70" x2="280" y2="220" stroke="#ddd" stroke-width="1"/>
+<line x1="120" y1="145" x2="440" y2="145" stroke="#ddd" stroke-width="1"/>
+
+<rect x="120" y="70" width="160" height="75" fill="#F3EEFE"/>
+<circle cx="185" cy="100" r="9" fill="#7F4FE0"/><circle cx="200" cy="100" r="9" fill="#7F4FE0"/>
+<text x="200" y="128" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">큰 키</text>
+
+<rect x="280" y="70" width="160" height="75" fill="#F3EEFE"/>
+<circle cx="345" cy="100" r="9" fill="#7F4FE0"/><circle cx="360" cy="100" r="9" fill="#fff" stroke="#ccc" stroke-width="1.5"/>
+<text x="360" y="128" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">큰 키</text>
+
+<rect x="120" y="145" width="160" height="75" fill="#F3EEFE"/>
+<circle cx="185" cy="175" r="9" fill="#fff" stroke="#ccc" stroke-width="1.5"/><circle cx="200" cy="175" r="9" fill="#7F4FE0"/>
+<text x="200" y="203" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">큰 키</text>
+
+<rect x="280" y="145" width="160" height="75" fill="#FDEDEC"/>
+<circle cx="345" cy="175" r="9" fill="#fff" stroke="#ccc" stroke-width="1.5"/><circle cx="360" cy="175" r="9" fill="#fff" stroke="#ccc" stroke-width="1.5"/>
+<text x="360" y="203" text-anchor="middle" font-size="11" font-weight="600" fill="#C0392B">작은 키</text>
+</svg>
+<div class="ci" style="padding-top:0">
+<p style="font-size:13px;color:#888">엄마 구슬 하나 × 아빠 구슬 하나 — 네 칸이 똑같은 확률로 생겨!</p>
+</div>
+</div>
+
+<div class="card" id="c9"><div class="ci">
+<h2>네 가지 결과를 보면 📊</h2>
+<div class="box w">
+<p><span class="ball bp"></span><span class="ball bp"></span> → <strong>큰 키</strong> (큰 거 둘)<br>
+<span class="ball bp"></span><span class="ball bw"></span> → <strong>큰 키</strong> (큰 게 이김)<br>
+<span class="ball bw"></span><span class="ball bp"></span> → <strong>큰 키</strong> (큰 게 이김)<br>
+<span class="ball bw"></span><span class="ball bw"></span> → <span style="color:#D85A30"><strong>작은 키</strong></span> (작은 거 둘뿐)</p>
+</div>
+<div class="shock">
+<p class="fact">4번 중 3번 큰 키,<br>1번만 작은 키!</p>
+</div>
+</div></div>
+
+<div class="card" id="c10"><div class="ci">
+<h2>바로 이거야! 🎉</h2>
+<p>3:1이라는 숫자가 우연이 아니었어.</p>
+<div class="box g">
+<p>모든 생물은<br>
+<strong>유전 정보 구슬을 두 개씩</strong> 갖고 있다.<br>
+하나는 엄마, 하나는 아빠한테서.<br>
+자식에게는 그중 <strong>하나씩만</strong><br>
+무작위로 전달된다.</p>
+</div>
+<p>이게 멘델 아저씨가 완두콩으로 증명한 <span class="hl">진짜 비밀</span>이야!</p>
+</div></div>
+
+<div class="card" id="c11"><div class="ci">
+<h2>오늘 알게 된 것 ✅</h2>
+<div class="box p">
+<p>🌱 키 큰 거 × 작은 거 → 1세대는 다 큰 키<br><br>
+🔍 2세대에서 다시 3:1로 등장<br><br>
+🎱 비밀은 "구슬 두 개" — 엄마 하나, 아빠 하나<br><br>
+🎲 자식에겐 둘 중 하나만 무작위로!</p>
+</div>
+<p>이 "구슬 두 개" 법칙, 사람한테도 그대로 적용돼. 너도 엄마 구슬 하나, 아빠 구슬 하나를 갖고 있어!</p>
+</div></div>
+
+<div class="card" id="c12"><div class="ci">
+<h2>근데 말이야... 😈</h2>
+<p>이 구슬 두 개 법칙, 완두콩한테도 사람한테도 다 똑같이 적용돼.</p>
+<p>근데 어떤 과학자가 작은 파리를 키우다가 — 말도 안 되는 걸 발견했어.</p>
+<div class="box w">
+<p>분명히 구슬 두 개 법칙대로라면<br>
+아들이든 딸이든 <strong>똑같은 비율</strong>로<br>
+나와야 하는데...</p>
+</div>
+<div class="shock">
+<p class="fact">왜 이 형질은<br>아들한테만 나타나지?? 🪰</p>
+</div>
+<p>법칙이 깨진 게 아니야. 오히려 이게 <span class="em">엄청난 비밀</span>을 밝혀낼 단서였어!</p>
+<div class="nx">
+<div class="nxl">다음 에피소드 →</div>
+<div class="nxt">파리 한 마리의 비밀</div>
+<div class="nxd">구슬 두 개 법칙이 무너진 것처럼 보인 사건 — 그 안에 숨은 진짜 증거</div>
+</div>
+</div></div>
+
+<div class="nav">
+<button class="nb" id="BP" onclick="go(-1)" disabled>← 이전</button>
+<span class="nc" id="CT">1 / 12</span>
+<button class="nb" id="BN" onclick="go(1)">다음 →</button>
+</div>
+</div>
+<script>
+var c=0,T=12,pg=document.getElementById('D');
+for(var i=0;i<T;i++){
+  var d=document.createElement('div');
+  d.className='dot'+(i===0?' on':'');
+  (function(n){d.onclick=function(){gt(n);};})(i);
+  pg.appendChild(d);
+}
+function gt(n){
+  if(n<0||n>=T)return;
+  document.getElementById('c'+(c+1)).className='card';
+  pg.children[c].className='dot';
+  c=n;
+  document.getElementById('c'+(c+1)).className='card show';
+  pg.children[c].className='dot on';
+  document.getElementById('BP').disabled=(c===0);
+  document.getElementById('BN').disabled=(c===T-1);
+  document.getElementById('CT').textContent=(c+1)+' / '+T;
+  window.scrollTo(0,0);
+}
+function go(d){gt(c+d);}
+var sx=0,sy=0,W=document.getElementById('W');
+W.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+W.addEventListener('touchend',function(e){
+  var dx=e.changedTouches[0].clientX-sx;
+  var dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0)go(1);else go(-1);}
+},{passive:true});
+</script>
+</body>
+</html>
