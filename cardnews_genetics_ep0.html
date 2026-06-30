@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>유전학이 뭐야?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,sans-serif;background:#f5f5f7;padding:20px 16px;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto}
+.dots{display:flex;gap:4px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.dot{width:18px;height:3px;border-radius:2px;background:#ddd;cursor:pointer}
+.dot.on{background:#1a1a2e}
+.card{display:none;background:#fff;border-radius:16px;border:0.5px solid #e0e0e0;overflow:hidden}
+.card.show{display:block}
+.ci{padding:22px 20px 18px}
+.ep{font-size:11px;color:#888;margin-bottom:8px}
+h1{font-size:22px;font-weight:700;line-height:1.3;color:#1a1a2e;margin-bottom:12px}
+h2{font-size:17px;font-weight:700;color:#1a1a2e;margin-bottom:10px}
+p{font-size:14px;line-height:1.85;color:#555;margin-bottom:10px}
+p:last-child{margin-bottom:0}
+.hl{color:#1a1a2e;font-weight:700}
+.em{color:#D85A30;font-weight:700}
+.box{border-radius:12px;padding:14px 16px;margin:10px 0;font-size:14px;line-height:1.8}
+.g{background:#E1F5EE;color:#085041}
+.p{background:#EEEDFE;color:#3C3489}
+.a{background:#FAEEDA;color:#633806}
+.w{background:#f5f5f7;color:#555}
+.shock{border:2px solid #1a1a2e;border-radius:12px;padding:16px;margin:12px 0;text-align:center}
+.fact{font-size:20px;font-weight:700;color:#1a1a2e;line-height:1.4;margin:6px 0}
+.nx{background:#EEEDFE;border-radius:12px;padding:16px;margin-top:14px}
+.nxl{font-size:11px;font-weight:600;color:#7F77DD;margin-bottom:6px}
+.nxt{font-size:15px;font-weight:700;color:#3C3489;margin-bottom:4px}
+.nxd{font-size:13px;color:#534AB7;line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 0}
+.nb{font-size:13px;padding:10px 22px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:manipulation}
+.nb:disabled{opacity:.3}
+.nc{font-size:12px;color:#999}
+svg{width:100%;display:block}
+.src{font-size:10px;color:#aaa;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap" id="W">
+<div class="dots" id="D"></div>
+
+<div class="card show" id="c1"><div class="ci">
+<div class="ep">에피소드 0 · 유전학이 뭐야?</div>
+<h1>얘들아, 안녕! 👋</h1>
+<p>나는 앞으로 <span class="hl">유전학</span> 이야기를 해보려고 해. 어렵지 않아. 걱정하지 마.</p>
+<p>근데 시작하기 전에 — 퀴즈 하나!</p>
+<div class="shock">
+<p style="font-size:13px;color:#888;margin-bottom:8px">다음 중 사실인 것은?</p>
+<p style="font-size:14px;color:#1a1a2e;font-weight:500;margin-bottom:5px">① 세포 하나 속 DNA를 펼치면 2m나 된다</p>
+<p style="font-size:14px;color:#1a1a2e;font-weight:500;margin-bottom:5px">② 내 몸 세포가 37조 개인데 다 같은 설계도다</p>
+<p style="font-size:14px;color:#1a1a2e;font-weight:500">③ 이 설계도를 처음 다 읽은 건 겨우 20년 전이다</p>
+</div>
+<p>정답은 <span class="em">셋 다 사실이야.</span> 믿기지 않지? 하나씩 설명해줄게!</p>
+</div></div>
+
+<div class="card" id="c2"><div class="ci">
+<h2>살아있다는 게 뭘까? 🌱</h2>
+<p>생물은 무생물과 달리 <span class="hl">살아있어.</span> 살아있으려면 뭘 해야 할까?</p>
+<div class="box g">
+<p>숨을 쉬어야 하고 🫁<br>밥을 먹어야 하고 🍚<br>똥도 눠야 하고 💩<br>자라야 하고 📏<br>아프면 낫기도 해야 해 🩹</p>
+</div>
+<p>이런 걸 <span class="hl">생명현상</span>이라고 해. 과학자들은 이게 어떻게 일어나는지 너무 궁금했어. 근데 이걸 이해하는 방법이 한 가지가 아니야!</p>
+</div></div>
+
+<div class="card" id="c3"><div class="ci">
+<h2>케이크가 있다는 걸 어떻게 알아? 🎂</h2>
+<p>눈 감아봐. 내 옆에 맛있는 케이크가 있어. 어떻게 알 수 있을까?</p>
+<div class="box a">
+<p>👀 <strong>눈으로</strong> — 케이크가 보여!<br>👃 <strong>코로</strong> — 달콤한 냄새!<br>👂 <strong>귀로</strong> — "케이크 먹어!" 엄마 목소리!<br>👅 <strong>입으로</strong> — 한 입 먹어보면 알지!</p>
+</div>
+<p>같은 케이크인데 <span class="hl">아는 방법이 여러 가지</span>잖아? 생명현상도 마찬가지야!</p>
+</div></div>
+
+<div class="card" id="c4"><div class="ci">
+<h2>비행기는 어떻게 만들어졌을까? ✈️</h2>
+<div class="box w"><p><strong>방법 1: 뜯어보기 🔩</strong><br>날개도 뜯고, 엔진도 뜯고, 조종석도 뜯어봐. 어떻게 작동하는지 이해할 수 있겠지?</p></div>
+<div class="box g"><p><strong>방법 2: 설계도 읽기 📐</strong><br>설계도에는 날개, 엔진, 좌석 — 모든 정보가 다 있어. 뜯지 않아도 이해할 수 있어!</p></div>
+<p>생물도 똑같아. 뜯어보는 방법(<span class="hl">해부학·생화학</span>)이 있고, 설계도를 읽는 방법(<span class="hl">유전학</span>)이 있어.</p>
+</div></div>
+
+<div class="card" id="c5"><div class="ci">
+<h2>유전학 = 생명의 설계도 🗺️</h2>
+<div class="shock"><p class="fact">생명의 설계도를<br>읽어서 이해하는 학문!</p></div>
+<p><span class="hl">둘 다 필요해!</span> 비행기를 뜯어보기도 하고 설계도도 읽으면 훨씬 잘 이해되잖아. 생명도 마찬가지야. 근데 이 설계도에 심각한 비밀이 있어...</p>
+</div></div>
+
+<div class="card" id="c6"><div class="ci">
+<h2>설계도가 외계어로 쓰여있어 🛸</h2>
+<p>생명의 설계도는 한국어도, 영어도, 이집트 상형문자도 아니야. 딱 <span class="em">4개의 글자</span>로만 이루어진 새로운 언어야.</p>
+<div class="shock">
+<p class="fact" style="letter-spacing:10px;color:#3C3489">A · T · G · C</p>
+<p style="font-size:12px;color:#888;margin-top:6px">이 네 글자가 전부야</p>
+</div>
+<p>이 네 글자가 수십억 번 반복되면서 <span class="hl">생명의 모든 정보</span>를 담고 있어. 얼마나 많이 반복되는지 봐봐. 아마 입이 벌어질걸? 😮</p>
+</div></div>
+
+<div class="card" id="c7">
+<div class="ci"><h2>😱 충격 사실 1</h2><p>네 몸 세포 <strong>하나</strong>에 들어있는 DNA를 꺼내서 쭉 펼치면 얼마나 길까?</p></div>
+<svg viewBox="0 0 480 140">
+<circle cx="70" cy="70" r="6" fill="#378ADD"/>
+<text x="70" y="50" text-anchor="middle" font-size="10" fill="#0C447C">세포 하나</text>
+<text x="70" y="95" text-anchor="middle" font-size="9" fill="#888">(약 0.01mm)</text>
+<text x="160" y="74" text-anchor="middle" font-size="20" fill="#aaa">→</text>
+<line x1="210" y1="70" x2="450" y2="70" stroke="#D85A30" stroke-width="3"/>
+<text x="330" y="50" text-anchor="middle" font-size="13" fill="#D85A30" font-weight="600">DNA를 펼치면</text>
+<text x="330" y="95" text-anchor="middle" font-size="13" fill="#D85A30" font-weight="700">약 2m !</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+  <div class="shock">
+    <p class="fact">세포 하나의 DNA =<br>약 2m</p>
+  </div>
+  <p>0.01mm짜리 세포 안에 2m 길이의 DNA가 들어있어. 어떻게 그게 가능할까? 게다가 네 몸엔 이런 세포가 <span class="hl">37조 개</span>나 있어.</p>
+</div></div>
+
+<div class="card" id="c8"><div class="ci">
+<h2>😱 충격 사실 2</h2>
+<p>네 몸에는 세포가 <span class="hl">37조 개</span> 있어. 심장 세포, 뇌 세포, 피부 세포... 다 다르게 생겼지?</p>
+<div class="box w"><p>그럼 이 세포들의 설계도는 다 다를까?<br><br>심장 세포는 심장 설계도, 뇌 세포는 뇌 설계도...</p></div>
+<div class="shock"><p class="fact">아니야! 37조 개 전부<br><span style="color:#D85A30">똑같은</span> 설계도야!</p></div>
+<p>그런데 어떤 세포는 심장이 되고, 어떤 세포는 눈이 돼. <span class="hl">왜일까?</span> 이 비밀은 나중에 알려줄게! 👀</p>
+</div></div>
+
+<div class="card" id="c9">
+<div class="ci"><h2>😱 충격 사실 3</h2><p>인류가 이 설계도를 처음 발견한 게 언제인지 알아?</p></div>
+<svg viewBox="0 0 480 110">
+<line x1="30" y1="55" x2="450" y2="55" stroke="#ddd" stroke-width="1.5"/>
+<circle cx="60" cy="55" r="6" fill="#7F77DD"/>
+<text x="60" y="40" text-anchor="middle" font-size="10" fill="#7F77DD" font-weight="600">1865</text>
+<text x="60" y="74" text-anchor="middle" font-size="9" fill="#888">멘델 유전 법칙</text>
+<circle cx="190" cy="55" r="6" fill="#D85A30"/>
+<text x="190" y="40" text-anchor="middle" font-size="10" fill="#D85A30" font-weight="600">1953</text>
+<text x="190" y="74" text-anchor="middle" font-size="9" fill="#888">DNA 구조 발견</text>
+<circle cx="320" cy="55" r="6" fill="#1D9E75"/>
+<text x="320" y="40" text-anchor="middle" font-size="10" fill="#1D9E75" font-weight="600">1970s</text>
+<text x="320" y="74" text-anchor="middle" font-size="9" fill="#888">설계도 첫 해독</text>
+<circle cx="430" cy="55" r="8" fill="#378ADD"/>
+<text x="430" y="38" text-anchor="middle" font-size="10" fill="#378ADD" font-weight="600">2003</text>
+<text x="430" y="74" text-anchor="middle" font-size="9" fill="#888">인간 설계도 완전 해독!</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+  <div class="shock"><p class="fact">인간 설계도 완전 해독 =<br>겨우 20년 전!</p></div>
+  <p>수백만 년 동안 살아왔는데, 우리 몸 설계도를 읽기 시작한 건 <span class="hl">할아버지 세대</span>부터야. 아직도 다 몰라!</p>
+</div></div>
+
+<div class="card" id="c10"><div class="ci">
+<h2>근데 이게 왜 중요해? 🤔</h2>
+<div class="box g"><p>💊 <strong>병을 고칠 수 있어</strong><br>설계도에 오타가 있으면 병이 생겨. 오타를 찾아서 고칠 수 있어!</p></div>
+<div class="box p"><p>🧬 <strong>나를 이해할 수 있어</strong><br>왜 나는 엄마 눈을 닮았는지, 왜 나는 우유를 못 마시는지!</p></div>
+<div class="box a"><p>🌱 <strong>더 나은 농작물도 만들 수 있어</strong><br>가뭄에 강한 쌀, 영양이 풍부한 채소!</p></div>
+<p>그래서 지금 유전학이 <span class="hl">가장 뜨거운 과학 분야</span>야.</p>
+</div></div>
+
+<div class="card" id="c11"><div class="ci">
+<h2>그럼 우리 뭐부터 할까? 🚀</h2>
+<div class="box w">
+<p>예를 들면 이런 거야.<br><br>
+<span style="font-family:monospace;font-size:13px;color:#3C3489">ATGAAAGGTTTA...</span><br><br>
+이게 무슨 뜻일까?<br><br>
+유전학자들은 이걸 읽고<br>
+"아, 이건 눈 색깔 부분이네!"<br>
+"이건 키를 결정하는 부분!" 이라고 해석해.</p>
+</div>
+<p>엄청나지 않아? <span class="hl">같이 이 외계어 공부해볼래? 🤝</span></p>
+</div></div>
+
+<div class="card" id="c12"><div class="ci">
+<h2>그런데 말이야... 🤔</h2>
+<p>이 설계도, 2m나 된다고 했잖아. 그런데 세포 하나는 겨우 0.01mm야.</p>
+<div class="shock">
+<p class="fact">2m가<br>0.01mm 안에?</p>
+<p style="font-size:12px;color:#888;margin-top:8px">2m ÷ 0.01mm = 20만 배 압축!</p>
+</div>
+<p>어떻게 가능한 걸까? 🤯 다음 에피소드에서 알려줄게!</p>
+<div class="nx">
+<div class="nxl">다음 에피소드 →</div>
+<div class="nxt">설계도는 어디 있어?</div>
+<div class="nxd">2m짜리 DNA가 0.01mm 세포에 어떻게 들어가는지</div>
+</div>
+<p class="src">※ 세포 1개당 DNA 길이 약 2m는 인간 체세포(이배체, 23쌍 염색체) 기준</p>
+</div></div>
+
+<div class="nav">
+<button class="nb" id="BP" onclick="go(-1)" disabled>← 이전</button>
+<span class="nc" id="CT">1 / 12</span>
+<button class="nb" id="BN" onclick="go(1)">다음 →</button>
+</div>
+</div>
+<script>
+var c=0,T=12,pg=document.getElementById('D');
+for(var i=0;i<T;i++){
+  var d=document.createElement('div');
+  d.className='dot'+(i===0?' on':'');
+  (function(n){d.onclick=function(){gt(n);};})(i);
+  pg.appendChild(d);
+}
+function gt(n){
+  if(n<0||n>=T)return;
+  document.getElementById('c'+(c+1)).className='card';
+  pg.children[c].className='dot';
+  c=n;
+  document.getElementById('c'+(c+1)).className='card show';
+  pg.children[c].className='dot on';
+  document.getElementById('BP').disabled=(c===0);
+  document.getElementById('BN').disabled=(c===T-1);
+  document.getElementById('CT').textContent=(c+1)+' / '+T;
+  window.scrollTo(0,0);
+}
+function go(d){gt(c+d);}
+var sx=0,sy=0,W=document.getElementById('W');
+W.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+W.addEventListener('touchend',function(e){
+  var dx=e.changedTouches[0].clientX-sx;
+  var dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0)go(1);else go(-1);}
+},{passive:true});
+</script>
+</body>
+</html>
