@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>글자가 몸이 되는 마법 2부</title>
+<meta property="og:title" content="글자가 몸이 되는 마법 2부 — 유전학 카드뉴스">
+<meta property="og:description" content="RNA 글자가 어떻게 단백질이 되는지, 아미노산과 리보솜의 이야기">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,sans-serif;background:#f5f5f7;padding:20px 16px;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto}
+.dots{display:flex;gap:4px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.dot{width:18px;height:3px;border-radius:2px;background:#ddd;cursor:pointer}
+.dot.on{background:#1a1a2e}
+.card{display:none;background:#fff;border-radius:16px;border:0.5px solid #e0e0e0;overflow:hidden}
+.card.show{display:block}
+.ci{padding:22px 20px 18px}
+.ep{font-size:11px;color:#888;margin-bottom:8px}
+h1{font-size:22px;font-weight:700;line-height:1.3;color:#1a1a2e;margin-bottom:12px}
+h2{font-size:17px;font-weight:700;color:#1a1a2e;margin-bottom:10px}
+p{font-size:14px;line-height:1.85;color:#555;margin-bottom:10px}
+p:last-child{margin-bottom:0}
+.hl{color:#1a1a2e;font-weight:700}
+.em{color:#D85A30;font-weight:700}
+.box{border-radius:12px;padding:14px 16px;margin:10px 0;font-size:14px;line-height:1.8}
+.g{background:#E1F5EE;color:#085041}
+.p{background:#EEEDFE;color:#3C3489}
+.a{background:#FAEEDA;color:#633806}
+.w{background:#f5f5f7;color:#555}
+.b{background:#E6F1FB;color:#0C447C}
+.shock{border:2px solid #1a1a2e;border-radius:12px;padding:16px;margin:12px 0;text-align:center}
+.fact{font-size:19px;font-weight:700;color:#1a1a2e;line-height:1.4;margin:6px 0}
+.nx{background:#EEEDFE;border-radius:12px;padding:16px;margin-top:14px}
+.nxl{font-size:11px;font-weight:600;color:#7F77DD;margin-bottom:6px}
+.nxt{font-size:15px;font-weight:700;color:#3C3489;margin-bottom:4px}
+.nxd{font-size:13px;color:#534AB7;line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 0}
+.nb{font-size:13px;padding:10px 22px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:manipulation}
+.nb:disabled{opacity:.3}
+.nc{font-size:12px;color:#999}
+svg{width:100%;display:block}
+.divider{height:1px;background:#eee;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap" id="W">
+<div class="dots" id="D"></div>
+
+<div class="card show" id="c1"><div class="ci">
+<div class="ep">에피소드 6 · 글자가 몸이 되는 마법 2부</div>
+<h1>단백질은 어떻게 생겼을까? 🧱</h1>
+<p>지난 시간에 RNA 복사본이 핵 밖 작업대로 이동했어. 이제 뭘 만드는지 알아보기 전에 — 먼저 <span class="hl">단백질이 어떻게 생겼는지</span>부터 알아야 해!</p>
+<div class="box w">
+<p>기억나? DNA는<br>
+A, T, G, C <strong>4종류</strong> 유닛이<br>
+길게 실처럼 연결된 거잖아.<br><br>
+단백질도 똑같은 방식이야.<br>
+다만 유닛이 달라!</p>
+</div>
+</div></div>
+
+<div class="card" id="c2">
+<div class="ci">
+<h2>단백질 = 아미노산 구슬 목걸이 📿</h2>
+<p>단백질은 <span class="hl">아미노산</span>이라는 유닛이 한 줄로 죽 연결된 거야.</p>
+</div>
+<svg viewBox="0 0 480 100">
+<text x="20" y="25" font-size="11" fill="#888">DNA:</text>
+<rect x="55" y="12" width="28" height="22" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="69" y="27" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">A</text>
+<rect x="87" y="12" width="28" height="22" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="101" y="27" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">T</text>
+<rect x="119" y="12" width="28" height="22" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="133" y="27" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">G</text>
+<rect x="151" y="12" width="28" height="22" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="165" y="27" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">C</text>
+<rect x="183" y="12" width="28" height="22" rx="4" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="197" y="27" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">A</text>
+<text x="215" y="27" font-size="11" fill="#aaa">...</text>
+<text x="240" y="27" font-size="10" fill="#888">4종류</text>
+
+<text x="20" y="75" font-size="11" fill="#888">단백질:</text>
+<circle cx="75" cy="68" r="13" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="75" y="72" text-anchor="middle" font-size="8" fill="#633806">아미노산</text>
+<line x1="88" y1="68" x2="97" y2="68" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="110" cy="68" r="13" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="110" y="72" text-anchor="middle" font-size="8" fill="#633806">아미노산</text>
+<line x1="123" y1="68" x2="132" y2="68" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="145" cy="68" r="13" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="145" y="72" text-anchor="middle" font-size="8" fill="#633806">아미노산</text>
+<line x1="158" y1="68" x2="167" y2="68" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="180" cy="68" r="13" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="180" y="72" text-anchor="middle" font-size="8" fill="#633806">아미노산</text>
+<text x="200" y="72" font-size="11" fill="#aaa">...</text>
+<text x="240" y="72" font-size="10" fill="#888">20종류</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+<p>아미노산 수십 개~수백 개가 줄줄이 연결된 게 단백질이야. 이 긴 체인이 제각각의 모양으로 <span class="hl">구불구불 꼬이면서</span> 각자 독특한 구조를 만들어!</p>
+</div></div>
+
+<div class="card" id="c3"><div class="ci">
+<h2>단백질 만드는 방법은 하나야 🎯</h2>
+<p>아미노산이 20종류나 되는데, 어떤 순서로 연결하느냐에 따라 완전히 다른 단백질이 돼!</p>
+<div class="box g">
+<p>머리카락 단백질 →<br>
+&nbsp;&nbsp;아미노산이 이 순서로 연결된 것<br><br>
+근육 단백질 →<br>
+&nbsp;&nbsp;아미노산이 저 순서로 연결된 것<br><br>
+눈 색소 단백질 →<br>
+&nbsp;&nbsp;또 다른 순서로 연결된 것</p>
+</div>
+<p>그러니까 단백질을 만든다는 건 — <span class="hl">아미노산의 순서를 정하는 것</span>이야. 그 순서를 DNA가 알려주는 거야!</p>
+</div></div>
+
+<div class="card" id="c4"><div class="ci">
+<h2>DNA를 어떻게 읽으면 아미노산이 될까? 🤔</h2>
+<p>DNA엔 A, T, G, C <span class="hl">4가지</span> 글자만 있어. 근데 아미노산은 <span class="em">20가지</span>야.</p>
+<p>어떻게 4가지로 20가지를 표현할 수 있을까? 과학자들이 추론했어.</p>
+<div class="box a">
+<p>1글자씩 읽으면?<br>
+&nbsp;&nbsp;4가지뿐 → 아미노산 20개 부족<br><br>
+2글자씩 읽으면?<br>
+&nbsp;&nbsp;4×4 = <strong>16가지</strong> → 아직 부족<br><br>
+3글자씩 읽으면?<br>
+&nbsp;&nbsp;4×4×4 = <strong>64가지</strong> → 충분!</p>
+</div>
+<p>그래서 DNA(RNA)는 <span class="hl">3글자씩 끊어 읽어서</span> 아미노산 하나를 지정해!</p>
+</div></div>
+
+<div class="card" id="c5">
+<div class="ci">
+<h2>세 글자 → 아미노산 하나 📖</h2>
+<p>세 글자 조합 하나가 아미노산 하나를 가리켜. 예를 들면 이런 식이야.</p>
+</div>
+<svg viewBox="0 0 480 130">
+<rect x="30" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="46" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">A</text>
+<rect x="64" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="80" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">U</text>
+<rect x="98" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="114" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">G</text>
+<text x="80" y="65" text-anchor="middle" font-size="20" fill="#aaa">↓</text>
+<circle cx="80" cy="100" r="22" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<text x="80" y="104" text-anchor="middle" font-size="10" font-weight="600" fill="#633806">메티오닌</text>
+
+<rect x="220" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="236" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">G</text>
+<rect x="254" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="270" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">G</text>
+<rect x="288" y="15" width="32" height="28" rx="4" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="304" y="33" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">U</text>
+<text x="270" y="65" text-anchor="middle" font-size="20" fill="#aaa">↓</text>
+<circle cx="270" cy="100" r="22" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<text x="270" y="104" text-anchor="middle" font-size="10" font-weight="600" fill="#633806">글리신</text>
+
+<text x="175" y="55" text-anchor="middle" font-size="13" fill="#aaa">다른 세 글자</text>
+<text x="175" y="72" text-anchor="middle" font-size="13" fill="#aaa">→ 다른 아미노산</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+<p>64가지 조합이 각각 아미노산을 지정하거나 "여기서 끝!"이라는 신호를 줘. 이 규칙을 <span class="hl">유전 암호</span>라고 해!</p>
+</div></div>
+
+<div class="card" id="c6"><div class="ci">
+<h2>작업대 — 리보솜 등장 🏭</h2>
+<p>이제 실제로 만드는 과정이야. RNA가 도착한 <span class="hl">리보솜</span>이 직접 읽고 만들어.</p>
+<div class="box b">
+<p>리보솜은 세포 안에 있는<br>
+아주 작은 <strong>단백질 제조 기계</strong>야.<br><br>
+RNA를 한 칸씩 당기면서<br>
+세 글자를 읽고<br>
+→ 아미노산 하나 붙이고<br>
+→ 다음 세 글자 읽고<br>
+→ 아미노산 하나 붙이고<br>
+→ 계속 반복!</p>
+</div>
+</div></div>
+
+<div class="card" id="c7">
+<div class="ci">
+<h2>아미노산이 쌓이면 단백질이 완성돼 🎉</h2>
+<p>리보솜이 RNA를 끝까지 읽으면 — 아미노산 체인이 완성돼!</p>
+</div>
+<svg viewBox="0 0 480 110">
+<text x="20" y="30" font-size="11" fill="#888">RNA 읽기:</text>
+<rect x="100" y="15" width="26" height="22" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="113" y="30" text-anchor="middle" font-size="9" fill="#085041">AUG</text>
+<rect x="128" y="15" width="26" height="22" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="141" y="30" text-anchor="middle" font-size="9" fill="#085041">GGU</text>
+<rect x="156" y="15" width="26" height="22" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="169" y="30" text-anchor="middle" font-size="9" fill="#085041">CAU</text>
+<rect x="184" y="15" width="26" height="22" rx="3" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="197" y="30" text-anchor="middle" font-size="9" fill="#085041">UGG</text>
+<text x="215" y="30" font-size="10" fill="#aaa">...</text>
+
+<text x="240" y="32" font-size="18" fill="#aaa">↓</text>
+
+<text x="20" y="85" font-size="11" fill="#888">단백질:</text>
+<circle cx="105" cy="80" r="14" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<line x1="119" y1="80" x2="126" y2="80" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="140" cy="80" r="14" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<line x1="154" y1="80" x2="161" y2="80" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="175" cy="80" r="14" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<line x1="189" y1="80" x2="196" y2="80" stroke="#D85A30" stroke-width="1.5"/>
+<circle cx="210" cy="80" r="14" fill="#FAEEDA" stroke="#D85A30" stroke-width="1.5"/>
+<text x="230" y="84" font-size="11" fill="#aaa">...</text>
+<text x="290" y="84" font-size="11" fill="#D85A30" font-weight="600">→ 단백질 완성!</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+<p>이 체인이 구불구불 꼬이면서 독특한 모양이 되면 — 비로소 <span class="hl">기능하는 단백질</span>이 완성돼!</p>
+</div></div>
+
+<div class="card" id="c8"><div class="ci">
+<h2>멘델의 "구슬"이 드디어 설명돼! 💡</h2>
+<p>ep2에서 멘델의 "구슬"을 배웠지? 눈 색깔을 정하는 그 구슬.</p>
+<div class="box p">
+<p>이제 정체가 밝혀졌어.<br><br>
+눈 색깔 구슬<br>
+= 눈 색소 단백질을 만드는 <strong>DNA 설계도 한 구간</strong><br><br>
+그 설계도가 RNA로 복사되고<br>
+→ 리보솜이 읽어서<br>
+→ 색소 단백질이 만들어지고<br>
+→ 눈 색깔이 결정돼!</p>
+</div>
+<p>이게 바로 A, T, G, C 글자가 <span class="hl">눈 색깔이 되는 과정</span>이야.</p>
+</div></div>
+
+<div class="card" id="c9">
+<div class="ci">
+<h2>ep0부터 지금까지 전체 그림 🗺️</h2>
+<p>우리가 배운 것 전부 연결해보면—</p>
+</div>
+<svg viewBox="0 0 480 220">
+<rect x="15" y="10" width="100" height="32" rx="6" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="65" y="30" text-anchor="middle" font-size="10" font-weight="600" fill="#3C3489">설계도 (DNA)</text>
+<text x="65" y="44" text-anchor="middle" font-size="8" fill="#534AB7">핵 안, 이중나선</text>
+
+<text x="65" y="65" text-anchor="middle" font-size="18" fill="#aaa">↓</text>
+<text x="130" y="62" font-size="9" fill="#888">필요한 부분만 복사</text>
+
+<rect x="15" y="72" width="100" height="32" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="65" y="92" text-anchor="middle" font-size="10" font-weight="600" fill="#085041">복사본 (RNA)</text>
+<text x="65" y="106" text-anchor="middle" font-size="8" fill="#0F6E56">핵 밖, 한 가닥</text>
+
+<text x="65" y="127" text-anchor="middle" font-size="18" fill="#aaa">↓</text>
+<text x="130" y="124" font-size="9" fill="#888">리보솜이 3글자씩 읽음</text>
+
+<rect x="15" y="134" width="100" height="32" rx="6" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="65" y="154" text-anchor="middle" font-size="10" font-weight="600" fill="#633806">단백질</text>
+<text x="65" y="168" text-anchor="middle" font-size="8" fill="#A84B20">아미노산 체인</text>
+
+<text x="65" y="189" text-anchor="middle" font-size="18" fill="#aaa">↓</text>
+
+<rect x="15" y="196" width="100" height="22" rx="6" fill="#f5f5f7" stroke="#ccc" stroke-width="1"/>
+<text x="65" y="211" text-anchor="middle" font-size="10" fill="#555">눈 색깔, 근육, 효소...</text>
+
+<line x1="200" y1="10" x2="200" y2="218" stroke="#eee" stroke-width="1"/>
+
+<text x="230" y="25" font-size="11" font-weight="600" fill="#1a1a2e">지금까지 배운 것</text>
+<text x="230" y="50" font-size="10" fill="#555">ep0 — 설계도(DNA)란?</text>
+<text x="230" y="68" font-size="10" fill="#555">ep1 — 핵 안에 보관, 염색체</text>
+<text x="230" y="86" font-size="10" fill="#555">ep2 — 멘델 구슬(유전)</text>
+<text x="230" y="104" font-size="10" fill="#555">ep3 — 구슬은 염색체 위에</text>
+<text x="230" y="122" font-size="10" fill="#555">ep4 — 이중나선 구조</text>
+<text x="230" y="140" font-size="10" fill="#555">ep5 — DNA → RNA 복사</text>
+<text x="230" y="158" font-size="10" fill="#555">ep6 — RNA → 단백질</text>
+<rect x="224" y="168" width="240" height="40" rx="6" fill="#EEEDFE"/>
+<text x="344" y="184" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">유전학의 큰 흐름이</text>
+<text x="344" y="200" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">완성됐어! 🎉</text>
+</svg>
+</div>
+
+<div class="card" id="c10"><div class="ci">
+<h2>그럼 "구슬" 하나가 정확히 뭘까? 🤔</h2>
+<p>멘델 때부터 "구슬"이라고 불렀잖아. 이제 정체가 보이기 시작했어.</p>
+<div class="box a">
+<p>2m나 되는 DNA에서<br>
+<strong>단백질 하나를 만드는 설계도</strong>에<br>
+해당하는 구간이 바로 구슬 하나야!</p>
+</div>
+<p>이 구간을 <span class="hl">유전자(gene)</span>라고 해. 유전자 하나 = 단백질 하나를 만드는 DNA 구간.</p>
+<p>그런데 — 2m 짜리 DNA 안에 이런 유전자가 도대체 몇 개나 있을까?</p>
+</div></div>
+
+<div class="card" id="c11"><div class="ci">
+<h2>오늘 배운 것 정리 ✅</h2>
+<div class="box w">
+<p>📿 단백질 = 아미노산 20종류가<br>
+&nbsp;&nbsp;&nbsp;한 줄로 연결된 체인<br><br>
+🔢 DNA 3글자 → 아미노산 1개<br>
+&nbsp;&nbsp;&nbsp;(4×4×4=64가지, 20개 충분!)<br><br>
+🏭 리보솜이 RNA를 읽으면서<br>
+&nbsp;&nbsp;&nbsp;아미노산을 붙여 단백질 완성<br><br>
+💡 멘델의 구슬 = 유전자<br>
+&nbsp;&nbsp;&nbsp;= 단백질 하나를 만드는 DNA 구간</p>
+</div>
+</div></div>
+
+<div class="card" id="c12"><div class="ci">
+<h2>근데 말이야... 🤔</h2>
+<p>멘델은 구슬이 <span class="hl">두 개씩</span>이라고 했어. 이제 구슬 = 유전자라는 걸 알았지?</p>
+<p>그럼 유전자 두 개는 DNA 어디에 있는 걸까?</p>
+<div class="shock">
+<p class="fact">46개 염색체가<br>사실은 23쌍이야!</p>
+</div>
+<p>이 쌍이 바로 멘델 구슬 두 개의 정체야. 엄마한테 받은 것 하나, 아빠한테 받은 것 하나 — 같은 유전자가 두 벌로 나란히 있었어!</p>
+<div class="nx">
+<div class="nxl">다음 에피소드 →</div>
+<div class="nxt">구슬 두 개의 정체</div>
+<div class="nxd">염색체 쌍이 뭔지, 유전자가 왜 두 벌씩인지 — 멘델 구슬의 물리적 실체</div>
+</div>
+</div></div>
+
+<div class="nav">
+<button class="nb" id="BP" onclick="go(-1)" disabled>← 이전</button>
+<span class="nc" id="CT">1 / 12</span>
+<button class="nb" id="BN" onclick="go(1)">다음 →</button>
+</div>
+</div>
+<script>
+var c=0,T=12,pg=document.getElementById('D');
+for(var i=0;i<T;i++){
+  var d=document.createElement('div');
+  d.className='dot'+(i===0?' on':'');
+  (function(n){d.onclick=function(){gt(n);};})(i);
+  pg.appendChild(d);
+}
+function gt(n){
+  if(n<0||n>=T)return;
+  document.getElementById('c'+(c+1)).className='card';
+  pg.children[c].className='dot';
+  c=n;
+  document.getElementById('c'+(c+1)).className='card show';
+  pg.children[c].className='dot on';
+  document.getElementById('BP').disabled=(c===0);
+  document.getElementById('BN').disabled=(c===T-1);
+  document.getElementById('CT').textContent=(c+1)+' / '+T;
+  window.scrollTo(0,0);
+}
+function go(d){gt(c+d);}
+var sx=0,sy=0,W=document.getElementById('W');
+W.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+W.addEventListener('touchend',function(e){
+  var dx=e.changedTouches[0].clientX-sx;
+  var dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0)go(1);else go(-1);}
+},{passive:true});
+</script>
+</body>
+</html>
