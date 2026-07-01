@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>글자가 몸이 되는 마법 1부</title>
+<meta property="og:title" content="글자가 몸이 되는 마법 1부 — 유전학 카드뉴스">
+<meta property="og:description" content="설계도(DNA)가 어떻게 복사본(RNA)이 되는지, 그리고 왜 그래야 하는지">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,sans-serif;background:#f5f5f7;padding:20px 16px;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto}
+.dots{display:flex;gap:4px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+.dot{width:18px;height:3px;border-radius:2px;background:#ddd;cursor:pointer}
+.dot.on{background:#1a1a2e}
+.card{display:none;background:#fff;border-radius:16px;border:0.5px solid #e0e0e0;overflow:hidden}
+.card.show{display:block}
+.ci{padding:22px 20px 18px}
+.ep{font-size:11px;color:#888;margin-bottom:8px}
+h1{font-size:22px;font-weight:700;line-height:1.3;color:#1a1a2e;margin-bottom:12px}
+h2{font-size:17px;font-weight:700;color:#1a1a2e;margin-bottom:10px}
+p{font-size:14px;line-height:1.85;color:#555;margin-bottom:10px}
+p:last-child{margin-bottom:0}
+.hl{color:#1a1a2e;font-weight:700}
+.em{color:#D85A30;font-weight:700}
+.box{border-radius:12px;padding:14px 16px;margin:10px 0;font-size:14px;line-height:1.8}
+.g{background:#E1F5EE;color:#085041}
+.p{background:#EEEDFE;color:#3C3489}
+.a{background:#FAEEDA;color:#633806}
+.w{background:#f5f5f7;color:#555}
+.b{background:#E6F1FB;color:#0C447C}
+.shock{border:2px solid #1a1a2e;border-radius:12px;padding:16px;margin:12px 0;text-align:center}
+.fact{font-size:19px;font-weight:700;color:#1a1a2e;line-height:1.4;margin:6px 0}
+.nx{background:#EEEDFE;border-radius:12px;padding:16px;margin-top:14px}
+.nxl{font-size:11px;font-weight:600;color:#7F77DD;margin-bottom:6px}
+.nxt{font-size:15px;font-weight:700;color:#3C3489;margin-bottom:4px}
+.nxd{font-size:13px;color:#534AB7;line-height:1.6}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 20px 0}
+.nb{font-size:13px;padding:10px 22px;border-radius:20px;border:1px solid #ddd;background:#fff;color:#555;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:manipulation}
+.nb:disabled{opacity:.3}
+.nc{font-size:12px;color:#999}
+svg{width:100%;display:block}
+.divider{height:1px;background:#eee;margin:14px 0}
+</style>
+</head>
+<body>
+<div class="wrap" id="W">
+<div class="dots" id="D"></div>
+
+<div class="card show" id="c1"><div class="ci">
+<div class="ep">에피소드 5 · 글자가 몸이 되는 마법 1부</div>
+<h1>설계도는 결국 뭘 만드는 걸까? 🤔</h1>
+<p>지금까지 설계도(DNA)가 어디 있는지, 어떻게 전달되는지, 어떻게 생겼는지 알아봤어.</p>
+<p>근데 진짜 핵심 질문이 남아있어.</p>
+<div class="shock">
+<p class="fact">이 설계도로<br>도대체 뭘 만드는 걸까?</p>
+</div>
+<p>답은 — <span class="hl">단백질</span>이야! 설계도는 결국 단백질을 만드는 설계도야.</p>
+</div></div>
+
+<div class="card" id="c2"><div class="ci">
+<h2>단백질이 뭔데? 🧱</h2>
+<p>단백질은 우리 몸을 구성하는 <span class="hl">핵심 부품</span>이야.</p>
+<div class="box w">
+<p>머리카락, 손톱 → 단백질<br>
+근육 → 단백질<br>
+소화를 돕는 물질 → 단백질<br>
+몸에 침입한 세균과 싸우는 것 → 단백질<br>
+눈의 수정체 → 단백질</p>
+</div>
+<p>우리 몸에서 일어나는 거의 모든 일에 단백질이 관여해. 그러니까 설계도(DNA)를 읽어서 단백질을 만드는 게 — 생명현상의 핵심이야!</p>
+</div></div>
+
+<div class="card" id="c3"><div class="ci">
+<h2>근데 어떻게 만들지? 전체 그림부터! 🗺️</h2>
+<p>DNA로 단백질을 바로 만들지는 않아. 중간 단계가 있어.</p>
+</div>
+<svg viewBox="0 0 480 80">
+<rect x="15" y="20" width="100" height="40" rx="8" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
+<text x="65" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#3C3489">설계도</text>
+<text x="65" y="52" text-anchor="middle" font-size="10" fill="#534AB7">DNA</text>
+<text x="160" y="45" text-anchor="middle" font-size="18" fill="#aaa">→</text>
+<rect x="190" y="20" width="100" height="40" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+<text x="240" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#085041">복사본</text>
+<text x="240" y="52" text-anchor="middle" font-size="10" fill="#0F6E56">RNA</text>
+<text x="335" y="45" text-anchor="middle" font-size="18" fill="#aaa">→</text>
+<rect x="365" y="20" width="100" height="40" rx="8" fill="#FAEEDA" stroke="#D85A30" stroke-width="1"/>
+<text x="415" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#633806">몸의 부품</text>
+<text x="415" y="52" text-anchor="middle" font-size="10" fill="#A84B20">단백질</text>
+</svg>
+<div class="ci" style="padding-top:8px">
+<p>오늘은 첫 번째 단계 — <span class="hl">DNA → RNA</span>를 알아볼 거야. 왜 복사본이 필요한지부터!</p>
+</div></div>
+
+<div class="card" id="c4"><div class="ci">
+<h2>비행기 설계도를 떠올려봐 ✈️</h2>
+<p>ep0에서 생명의 설계도를 비행기 설계도에 비유했던 거 기억나?</p>
+<div class="box a">
+<p>비행기 공장을 생각해봐.<br><br>
+조종석 만드는 사람이<br>
+엔진 만드는 설계도까지<br>
+볼 필요는 없잖아?<br><br>
+오늘 만들 부분 설계도만<br>
+<strong>따로 복사해서</strong> 가져가면 돼!</p>
+</div>
+<p>DNA도 똑같아. 지금 당장 필요한 단백질 설계도 부분만 — <span class="hl">복사해서 내보내</span>는 거야.</p>
+</div></div>
+
+<div class="card" id="c5"><div class="ci">
+<h2>설계도를 직접 가져갈 수 없어 🔐</h2>
+<p>그럼 왜 설계도(DNA)를 직접 가져가지 않을까?</p>
+<div class="box w">
+<p>이유 1: 설계도는 <strong>금고(핵) 안에</strong> 있어야 해<br>
+너무 소중해서 밖으로 꺼내면 안 돼<br><br>
+이유 2: 설계도는 <strong>모두가 써야</strong> 해<br>
+한 사람이 가져가면 다른 사람이 못 써<br><br>
+이유 3: 너무 <strong>크고 길어</strong><br>
+2m짜리를 통째로 들고 다닐 수 없어</p>
+</div>
+<p>그래서 필요한 부분만 복사해서 밖으로 보내는 거야!</p>
+</div></div>
+
+<div class="card" id="c6"><div class="ci">
+<h2>복사본의 이름은 RNA 📄</h2>
+<p>이 복사본을 <span class="hl">RNA</span>라고 해.</p>
+<div class="box g">
+<p>DNA의 필요한 부분을<br>
+RNA로 <strong>베껴적어서</strong><br>
+핵 밖으로 들고 나가.<br><br>
+RNA가 핵 밖에 있는<br>
+<strong>작업대</strong>로 이동하면<br>
+거기서 단백질을 만들기 시작해!</p>
+</div>
+</div></div>
+
+<div class="card" id="c7">
+<div class="ci">
+<h2>설계도 vs 복사본 — 뭐가 다를까? 🔍</h2>
+<p>DNA와 RNA는 비슷하게 생겼지만 중요한 차이가 있어.</p>
+</div>
+<svg viewBox="0 0 480 160">
+<text x="120" y="22" text-anchor="middle" font-size="12" font-weight="600" fill="#3C3489">설계도 (DNA)</text>
+<path d="M 80 35 Q 100 70 80 105 Q 60 70 80 105" fill="none" stroke="#7F77DD" stroke-width="3"/>
+<path d="M 100 35 Q 80 70 100 105 Q 120 70 100 105" fill="none" stroke="#7F77DD" stroke-width="3" opacity="0.6"/>
+<line x1="83" y1="50" x2="97" y2="50" stroke="#7F77DD" stroke-width="2" opacity="0.8"/>
+<line x1="83" y1="65" x2="97" y2="65" stroke="#7F77DD" stroke-width="2" opacity="0.8"/>
+<line x1="83" y1="80" x2="97" y2="80" stroke="#7F77DD" stroke-width="2" opacity="0.8"/>
+<line x1="83" y1="95" x2="97" y2="95" stroke="#7F77DD" stroke-width="2" opacity="0.8"/>
+<text x="120" y="130" text-anchor="middle" font-size="10" fill="#888">두 가닥 (이중나선)</text>
+<text x="120" y="145" text-anchor="middle" font-size="10" fill="#888">영구 보관용</text>
+
+<text x="360" y="22" text-anchor="middle" font-size="12" font-weight="600" fill="#085041">복사본 (RNA)</text>
+<path d="M 360 35 Q 380 70 360 105" fill="none" stroke="#1D9E75" stroke-width="3"/>
+<text x="360" y="130" text-anchor="middle" font-size="10" fill="#888">한 가닥</text>
+<text x="360" y="145" text-anchor="middle" font-size="10" fill="#888">일회용 복사본</text>
+</svg>
+<div class="ci" style="padding-top:4px">
+<p>DNA는 <span class="hl">두 가닥</span>이라 튼튼해. 평생 보관해야 하니까. RNA는 <span class="em">한 가닥</span>이야. 한 번 쓰고 버릴 복사본이니까 이중으로 보호할 필요가 없어!</p>
+</div></div>
+
+<div class="card" id="c8"><div class="ci">
+<h2>어떻게 베껴쓰는 걸까? ✏️</h2>
+<p>DNA 두 가닥 중 <span class="hl">한 가닥</span>을 읽으면서 RNA를 만들어.</p>
+<div class="box b">
+<p>DNA 글자 → RNA 글자<br><br>
+A → U (T 대신 U가 들어와)<br>
+T → A<br>
+G → C<br>
+C → G</p>
+</div>
+<p>딱 한 가지 차이 — RNA에는 T 대신 <span class="hl">U(유라실)</span>이 들어와. 하지만 원리는 같아. 짝꿍 글자를 찾아서 이어붙이는 거야.</p>
+</div></div>
+
+<div class="card" id="c9"><div class="ci">
+<h2>RNA가 핵 밖으로 나가 🚪</h2>
+<p>완성된 RNA는 핵 밖으로 나가서 — 단백질을 만드는 작업대로 이동해.</p>
+<div class="box a">
+<p>핵에는 작은 구멍들이 있어.<br>
+RNA는 딱 그 구멍을 통과할 수 있는<br>
+크기야!<br><br>
+DNA는 너무 길고 이중나선이라<br>
+구멍을 통과 못 해.</p>
+</div>
+<p>이렇게 설계도(DNA)는 금고(핵) 안에 안전하게 남고, 복사본(RNA)만 밖으로 나가서 일을 해!</p>
+</div></div>
+
+<div class="card" id="c10"><div class="ci">
+<h2>이게 왜 똑똑한 시스템일까? 🧠</h2>
+<p>잠깐 생각해봐. 이 방식이 얼마나 효율적인지.</p>
+<div class="box g">
+<p>✅ 원본(DNA)은 절대 손상 안 돼<br><br>
+✅ 여러 RNA를 동시에 만들 수 있어<br>
+(같은 설계도로 수천 개의 복사본!)<br><br>
+✅ 필요한 단백질만 골라서 만들어<br>
+(조종석 팀, 엔진 팀 각자 필요한 것만)<br><br>
+✅ 다 쓴 RNA는 분해해서 재활용</p>
+</div>
+</div></div>
+
+<div class="card" id="c11"><div class="ci">
+<h2>오늘 배운 것 정리 ✅</h2>
+<div class="box w">
+<p>🧱 설계도는 <strong>단백질</strong>을 만드는 설계도<br><br>
+📄 필요한 부분만 <strong>RNA로 복사</strong>해서<br>
+&nbsp;&nbsp;&nbsp;핵 밖으로 내보내<br><br>
+🔒 원본(DNA)은 핵 안에 그대로<br><br>
+〰️ DNA는 두 가닥, RNA는 한 가닥<br>
+&nbsp;&nbsp;&nbsp;(복사본이니까 보호 불필요)<br><br>
+🔄 T 대신 U가 들어오는 것만 달라</p>
+</div>
+</div></div>
+
+<div class="card" id="c12"><div class="ci">
+<h2>근데 말이야... 🤔</h2>
+<p>RNA가 작업대로 도착했어. 이제 뭘 하는 걸까?</p>
+<div class="box w">
+<p>RNA에 적힌 글자들을<br>
+누가 어떻게 읽어서<br>
+단백질을 만드는 걸까?</p>
+</div>
+<div class="shock">
+<p class="fact">세 글자씩 읽어서<br>아미노산 하나씩 붙여가면<br>단백질이 완성돼!</p>
+</div>
+<div class="nx">
+<div class="nxl">다음 에피소드 →</div>
+<div class="nxt">글자가 몸이 되는 마법 2부</div>
+<div class="nxd">RNA 글자가 어떻게 단백질로 완성되는지 — 리보솜과 아미노산 이야기</div>
+</div>
+</div></div>
+
+<div class="nav">
+<button class="nb" id="BP" onclick="go(-1)" disabled>← 이전</button>
+<span class="nc" id="CT">1 / 12</span>
+<button class="nb" id="BN" onclick="go(1)">다음 →</button>
+</div>
+</div>
+<script>
+var c=0,T=12,pg=document.getElementById('D');
+for(var i=0;i<T;i++){
+  var d=document.createElement('div');
+  d.className='dot'+(i===0?' on':'');
+  (function(n){d.onclick=function(){gt(n);};})(i);
+  pg.appendChild(d);
+}
+function gt(n){
+  if(n<0||n>=T)return;
+  document.getElementById('c'+(c+1)).className='card';
+  pg.children[c].className='dot';
+  c=n;
+  document.getElementById('c'+(c+1)).className='card show';
+  pg.children[c].className='dot on';
+  document.getElementById('BP').disabled=(c===0);
+  document.getElementById('BN').disabled=(c===T-1);
+  document.getElementById('CT').textContent=(c+1)+' / '+T;
+  window.scrollTo(0,0);
+}
+function go(d){gt(c+d);}
+var sx=0,sy=0,W=document.getElementById('W');
+W.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+W.addEventListener('touchend',function(e){
+  var dx=e.changedTouches[0].clientX-sx;
+  var dy=e.changedTouches[0].clientY-sy;
+  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){if(dx<0)go(1);else go(-1);}
+},{passive:true});
+</script>
+</body>
+</html>
